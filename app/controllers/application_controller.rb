@@ -3,7 +3,4 @@ class ApplicationController < ActionController::Base
     render html: "hello, world!"
   end
 
-  def abcd
-
-  end
 end
