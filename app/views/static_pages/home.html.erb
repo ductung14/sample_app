@@ -1,0 +1,12 @@
+<% provide(:title, t("home.title1")) %>
+<div class="center jumbotron">
+  <h1><%= t("home.title") %></h1>
+  <h2>
+    <%= t("home.content") %>
+    <%= link_to t("home.book_title"), "https://www.railstutorial.org/" %>
+    <%= t("home.sample_app") %>
+  </h2>
+  <%= link_to t("home.link_signup"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= image_tag("rails.svg", alt: "Kitten") %>
