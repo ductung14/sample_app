@@ -11,11 +11,11 @@ gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
+gem "bcrypt", "~> 3.1.7"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: true
 gem "sassc-rails"
 gem "bootstrap-sass"
-gem "bcrypt"
 gem "i18n"
 gem "config"
 gem "image_processing", "~> 1.2"
