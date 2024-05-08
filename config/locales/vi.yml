@@ -1,7 +1,7 @@
 vi:
   application:
     title: "Ứng dụng Mẫu Hướng dẫn Ruby on Rails"
-    book_title: "Hướng dẫn Ruby on Rails"
+    book_title: "Hướng dẫn Ruby on Rails" 
   header:
     link_home: "Trang chủ"
     link_help: "Trợ giúp"
@@ -13,6 +13,7 @@ vi:
     author: "Michael Hartl"
     the: "Của"
     by: "bởi"
+    book_title: "Hướng dẫn Ruby on Rails"
   contact:
     title: "Liên hệ"
     content: "Liên hệ với Hướng dẫn Ruby on Rails về ứng dụng mẫu tại"
@@ -21,20 +22,23 @@ vi:
     title: "Giới thiệu"
     book_title: "Hướng dẫn Ruby on Rails"
     content: "Đây là ứng dụng mẫu cho hướng dẫn."
-    content1: ", một phần của"
-    content2: "dòng hướng dẫn, là"
-    content3: "để dạy lập trình web với"
-    learn_enough: "Học Đủ"
-    book: "sách"
+    content1: ", phần của"
+    content2: "gia đình hướng dẫn, là một"
+    content3: "để dạy phát triển web với"
+    learn_enough: "Học đủ"
+    book: "cuốn sách"
     and: "và"
     name: "Ruby on Rails"
   home:
     title1: "Trang chủ"
+    greeting: "Chào mừng đến với Ứng dụng Mẫu!"
     title: "Chào mừng đến với Ứng dụng Mẫu"
     content: "Đây là trang chủ cho"
     book_title: "Hướng dẫn Ruby on Rails"
     link_signup: "Đăng ký ngay!"
     sample_app: "ứng dụng mẫu."
+    notify: "Không tìm thấy người dùng"
+    error: "Tạo tài khoản không thành công"
   help:
     title: "Trợ giúp"
     page: "Trang Trợ giúp Hướng dẫn Rails"
@@ -44,3 +48,10 @@ vi:
   new:
     title: "Đăng ký"
     content: "Đây sẽ là trang đăng ký cho người dùng mới."
+    create: "Tạo tài khoản của tôi"
+    confirmation: "Xác nhận"
+    name: "Tên"
+    email: "Email"
+    password: "Mật khẩu"
+  error:
+    notify: "Biểu mẫu chứa"
