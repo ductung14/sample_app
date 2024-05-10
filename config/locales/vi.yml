@@ -2,10 +2,17 @@ vi:
   application:
     title: "Ứng dụng Mẫu Hướng dẫn Ruby on Rails"
     book_title: "Hướng dẫn Ruby on Rails" 
-  header:
-    link_home: "Trang chủ"
+  header:  
+    link_home: "Trang chủ"  
     link_help: "Trợ giúp"
     link_login: "Đăng nhập"
+    link_profile: "Hồ sơ" 
+    link_setting: "Cài đặt"   
+    link_logout: "Đăng xuất"
+    link_account: "Tài khoản"
+    link_user: "Người dùng"
+    link_sample: "Ứng dụng mẫu"
+    toggle: "Chuyển đổi điều hướng thành"
   footer:
     link_about: "Giới thiệu"
     link_contact: "Liên hệ"
@@ -55,3 +62,10 @@ vi:
     password: "Mật khẩu"
   error:
     notify: "Biểu mẫu chứa"
+  session:
+    title: "Đăng nhập"
+    email: "Email"
+    password: "Mật khẩu"
+    link_signup: "Đăng ký ngay!"
+    newuser: "Người dùng mới?"
+    error: "Kết hợp email/mật khẩu không hợp lệ"
