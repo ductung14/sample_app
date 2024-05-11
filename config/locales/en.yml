@@ -37,6 +37,14 @@ en:
     link_home: "Home"
     link_help: "Help"
     link_login: "Log in"
+    link_profile: "Profile"
+    link_setting: "Settings"
+    link_logout: "Log out"
+    link_login: "Log in"
+    link_account: "Account"
+    link_user: "Users"
+    link_sample: "sample app"
+    toggle: "Toggle navigation"
   footer:
     link_about: "About"
     link_contact: "Contact"
@@ -86,3 +94,10 @@ en:
     password: "Password"
   error:
     notify: "The form contains"
+  session:
+    title: "Log in"
+    email: "Email"
+    password: "Password"
+    link_signup: "Sign up now!"
+    newuser: "New user?"
+    error: "Invalid email/password combination"

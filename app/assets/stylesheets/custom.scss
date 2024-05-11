@@ -80,13 +80,6 @@ footer {
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
   color: $light-gray;
-}
-
-footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid $gray-medium-light;
-  color: $light-gray;
   a {
     color: #555;
     &:hover {
@@ -106,6 +99,24 @@ footer {
   }
 }
 
+@media (max-width: 800px) {
+  footer {
+    small {
+      display: block;
+      float: none;
+      margin-bottom: 1em;
+    }
+    ul {
+      float: none;
+      padding: 0;
+      li {
+        float: none;
+        margin-left: 0;
+      }
+    }
+  }
+}
+/* miscellaneous */
 .debug_dump {
   clear: both;
   float: left;
@@ -172,4 +183,8 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+/* Dropdown menu */
+.dropdown-menu.active {
+  display: block;
 }
