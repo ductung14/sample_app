@@ -15,7 +15,7 @@ gem "jbuilder"
 gem "bcrypt", "~> 3.1.7"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: true
-gem "sassc-rails"
+gem "sass-rails"
 gem "bootstrap-sass"
 gem "i18n"
 gem "config"
