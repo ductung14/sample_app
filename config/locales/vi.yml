@@ -60,13 +60,33 @@ vi:
     name: "Tên"
     email: "Email"
     password: "Mật khẩu"
+    button: "Tạo tài khoản của tôi"
   error:
     notify: "Biểu mẫu chứa"
   session:
     title: "Đăng nhập"
     email: "Email"
+    name: "Tên"
+    confir_password: "Xác nhận mật khẩu"
     password: "Mật khẩu"
     link_signup: "Đăng ký ngay!"
     newuser: "Người dùng mới?"
     error: "Kết hợp email/mật khẩu không hợp lệ"
     request: "Hãy nhớ tôi trên máy tính này"
+  edit:
+    title: "Chỉnh sửa người dùng"
+    button: "Lưu thay đổi"
+    change: "Thay đổi"
+    content: "Cập nhật hồ sơ của bạn"
+  login:
+    notify: "Vui lòng đăng nhập."
+  user:
+    notify1: "Hồ sơ đã được cập nhật"
+    notify2: "Người dùng đã được xóa"
+    question: "Bạn chắc chắn?"
+    action: "Xoá"
+    notify: "Không tìm thấy người dùng"
+    error: "Cập nhật thất bại"
+    error1: "Xóa người dùng không thành công"
+  index:
+    title: "Tất cả người dùng"
