@@ -13,6 +13,8 @@ gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
 gem "bcrypt", "~> 3.1.7"
+gem "faker", "2.21.0"
+gem "pagy"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: true
 gem "sass-rails"

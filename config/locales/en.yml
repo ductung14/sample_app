@@ -92,13 +92,33 @@ en:
     name: "Name"
     email: "Email"
     password: "Password"
+    button: "Create my account"
   error:
     notify: "The form contains"
   session:
     title: "Log in"
+    name: "Name"
+    confir_password: "Password confirmation"
     email: "Email"
     password: "Password"
     link_signup: "Sign up now!"
     newuser: "New user?"
     error: "Invalid email/password combination"
     request: "Remember me on this computer"
+  edit:
+    title: "Edit user"
+    button: "Save changes"
+    change: "Change"
+    content: "Update your profile"
+  login:
+    notify: "Please log in."
+  user:
+    notify1: "Profile updated"
+    notify2: "User deleted"
+    question: "You sure?"
+    action: "Delete"
+    notify: "User not found"
+    error: "Update failed"
+    error1: "Delete users failed"
+  index:
+    title: "All users"
