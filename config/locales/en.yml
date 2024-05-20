@@ -105,6 +105,7 @@ en:
     newuser: "New user?"
     error: "Invalid email/password combination"
     request: "Remember me on this computer"
+    mess: "Account not activated. Check your email for the activation link."
   edit:
     title: "Edit user"
     button: "Save changes"
@@ -120,5 +121,24 @@ en:
     notify: "User not found"
     error: "Update failed"
     error1: "Delete users failed"
+    info: "Please check your email to activate your account."
   index:
     title: "All users"
+  account:
+    notify: "Account activated!"
+    dranger: "Invalid activation link"
+    title: "Sample App"
+    hi: "Hi"
+    action: "Welcome to the Sample App! Click on the link below to activate your account:"
+    activate: "Activate"
+  mailer:
+    subject: "Account activation"
+    hi: "Hi"
+  password:
+    title: "User#password_reset"
+    content: "find me in app/views/user_mailer/password_reset.html.erb"
+  text:
+    hi: "Hi"
+    content: "Welcome to the Sample App! Click on the link below to activate your account:"
+    password: "User#password_reset"
+    pass_content: "find me in app/views/user_mailer/password_reset.text.erb"
