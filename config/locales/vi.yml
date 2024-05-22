@@ -1,7 +1,7 @@
 vi:
   application:
-    title: "Ruby on Rails Tutorial Sample App"
-    book_title: "Ruby on Rails Tutorial" 
+    title: "Ứng dụng mẫu Ruby on Rails Tutorial"
+    book_title: "Ruby on Rails Tutorial"
   header:
     link_home: "Trang chủ"
     link_help: "Trợ giúp"
@@ -30,17 +30,17 @@ vi:
     book_title: "Ruby on Rails Tutorial"
     content: "Đây là ứng dụng mẫu cho hướng dẫn."
     content1: ", một phần của"
-    content2: "gia đình hướng dẫn, là"
-    content3: "để dạy lập trình web với"
-    learn_enough: "Học Đủ"
+    content2: "dòng hướng dẫn, là một"
+    content3: "để dạy phát triển web với"
+    learn_enough: "Học đủ"
     book: "sách"
     and: "và"
     name: "Ruby on Rails"
   home:
     title1: "Trang chủ"
-    greeting: "Chào mừng bạn đến với ứng dụng mẫu!"
-    title: "Chào mừng bạn đến với ứng dụng mẫu"
-    content: "Đây là trang chủ cho"
+    greeting: "Chào mừng đến với Ứng dụng Mẫu!"
+    title: "Chào mừng đến với Ứng dụng Mẫu"
+    content: "Đây là trang chủ của"
     book_title: "Ruby on Rails Tutorial"
     link_signup: "Đăng ký ngay!"
     sample_app: "ứng dụng mẫu."
@@ -48,9 +48,9 @@ vi:
     error: "Tạo tài khoản thất bại"
   help:
     title: "Trợ giúp"
-    page: "Trang Trợ giúp Hướng dẫn Rails"
+    page: "Trang Trợ giúp Rails Tutorial"
     book_title: "Ruby on Rails Tutorial"
-    content1: "Nhận trợ giúp về Hướng dẫn Rails tại"
+    content1: "Nhận trợ giúp về Ruby on Rails Tutorial tại"
     content2: "Để nhận trợ giúp về ứng dụng mẫu này, xem"
   new:
     title: "Đăng ký"
@@ -67,12 +67,14 @@ vi:
     title: "Đăng nhập"
     name: "Tên"
     confir_password: "Xác nhận mật khẩu"
+    confir_pass: "Xác nhận"
     email: "Email"
     password: "Mật khẩu"
     link_signup: "Đăng ký ngay!"
     newuser: "Người dùng mới?"
     error: "Kết hợp email/mật khẩu không hợp lệ"
     request: "Ghi nhớ tôi trên máy tính này"
+    forgot_pass: "(quên mật khẩu)"
     mess: "Tài khoản chưa được kích hoạt. Kiểm tra email của bạn để lấy liên kết kích hoạt."
   edit:
     title: "Chỉnh sửa người dùng"
@@ -82,9 +84,9 @@ vi:
   login:
     notify: "Vui lòng đăng nhập."
   user:
-    notify1: "Hồ sơ được cập nhật"
+    notify1: "Hồ sơ đã được cập nhật"
     notify2: "Người dùng đã bị xóa"
-    question: "Bạn chắc chắn chứ?"
+    question: "Bạn có chắc không?"
     action: "Xóa"
     notify: "Không tìm thấy người dùng"
     error: "Cập nhật thất bại"
