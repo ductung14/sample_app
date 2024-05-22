@@ -1,34 +1,3 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   "true": "foo"
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
   application:
     title: "Ruby on Rails Tutorial Sample App"
@@ -40,7 +9,6 @@ en:
     link_profile: "Profile"
     link_setting: "Settings"
     link_logout: "Log out"
-    link_login: "Log in"
     link_account: "Account"
     link_user: "Users"
     link_sample: "sample app"
@@ -99,12 +67,14 @@ en:
     title: "Log in"
     name: "Name"
     confir_password: "Password confirmation"
+    confir_pass: "Confirmation"
     email: "Email"
     password: "Password"
     link_signup: "Sign up now!"
     newuser: "New user?"
     error: "Invalid email/password combination"
     request: "Remember me on this computer"
+    forgot_pass: "(forgot password)"
     mess: "Account not activated. Check your email for the activation link."
   edit:
     title: "Edit user"
@@ -133,12 +103,22 @@ en:
     activate: "Activate"
   mailer:
     subject: "Account activation"
-    hi: "Hi"
+    password: "Password reset"
   password:
-    title: "User#password_reset"
     content: "find me in app/views/user_mailer/password_reset.html.erb"
-  text:
-    hi: "Hi"
-    content: "Welcome to the Sample App! Click on the link below to activate your account:"
-    password: "User#password_reset"
-    pass_content: "find me in app/views/user_mailer/password_reset.text.erb"
+  pass_reset:
+    info: "Email sent with password reset instructions"
+    dranger: "Email address not found"
+    dranger1: "Password reset has expired."
+    error: "can't be empty"
+    success: "Password has been reset."
+    title: "Password reset"
+    content: "To reset your password click the link below:"
+    content1: "This link will expire in two hours."
+    content2: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+  reset_pass:
+    title: "Reset password"
+    button: "Update password"
+  page_reset:
+    title: "Forgot password"
+    button: "Submit"
