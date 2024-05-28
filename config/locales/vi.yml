@@ -46,6 +46,7 @@ vi:
     sample_app: "ứng dụng mẫu."
     notify: "Không tìm thấy người dùng"
     error: "Tạo tài khoản thất bại"
+    micropost: "Nguồn cấp dữ liệu vi bài"
   help:
     title: "Trợ giúp"
     page: "Trang Trợ giúp Rails Tutorial"
@@ -97,18 +98,54 @@ vi:
   account:
     notify: "Tài khoản đã được kích hoạt!"
     dranger: "Liên kết kích hoạt không hợp lệ"
-    title: "Ứng dụng mẫu"
-    hi: "Xin chào"
-    action: "Chào mừng bạn đến với ứng dụng mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+    title: "Ứng dụng Mẫu"
+    hi: "Chào"
+    action: "Chào mừng đến với Ứng dụng Mẫu! Nhấp vào liên kết dưới đây để kích hoạt tài khoản của bạn:"
     activate: "Kích hoạt"
   mailer:
     subject: "Kích hoạt tài khoản"
-    hi: "Xin chào"
+    password: "Đặt lại mật khẩu"
   password:
-    title: "User#password_reset"
-    content: "Tìm tôi trong app/views/user_mailer/password_reset.html.erb"
-  text:
-    hi: "Xin chào"
-    content: "Chào mừng bạn đến với Ứng dụng Mẫu! Nhấn vào liên kết dưới đây để kích hoạt tài khoản của bạn:"
-    password: "User#password_reset"
-    pass_content: "tìm trong app/views/user_mailer/password_reset.text.erb"
+    content: "tìm tôi trong app/views/user_mailer/password_reset.html.erb"
+  pass_reset:
+    info: "Email đã được gửi với hướng dẫn đặt lại mật khẩu"
+    dranger: "Không tìm thấy địa chỉ email"
+    dranger1: "Đặt lại mật khẩu đã hết hạn."
+    error: "không thể để trống"
+    success: "Mật khẩu đã được đặt lại."
+    title: "Đặt lại mật khẩu"
+    content: "Để đặt lại mật khẩu của bạn nhấp vào liên kết dưới đây:"
+    content1: "Liên kết này sẽ hết hạn sau hai giờ."
+    content2: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ giữ nguyên."
+  reset_pass:
+    title: "Đặt lại mật khẩu"
+    button: "Cập nhật mật khẩu"
+  page_reset:
+    title: "Quên mật khẩu"
+    button: "Gửi"
+    title: "Ứng dụng mẫu"
+    action: "Chào mừng bạn đến với ứng dụng mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+    activate: "Kích hoạt"
+  controller:
+    dranger: "Xin vui lòng đăng nhập."
+  micropost:
+    success: "Bài đăng vi mô đã được tạo!"
+    success1: "Bài đăng vi mô đã bị xóa"
+    post: "Đã đăng"
+    ago: "trước đây."
+    delete: "xoá"
+    user: "xem hồ sơ của tôi"
+    micropost: "bài viết vi mô"
+    content: "Soạn bài micropost mới..."
+    action: "Bưu kiện"
+    yousure: "Bạn chắc chắn?"
+    alert: "Kích thước tệp tối đa là 5MB. Vui lòng chọn tệp nhỏ hơn."
+    mess: "phải là định dạng hình ảnh hợp lệ"
+    mess1: "phải nhỏ hơn 5 MB"
+    title: "Bài đăng vi mô"
+    error: "Xoá không thành công"
+    error1: "Không tìm thấy micropost"
+  share:
+    error: "Biểu mẫu chứa"
+  js:
+    file_size_error: "Kích thước tệp tối đa là 5MB. Vui lòng chọn một tệp nhỏ hơn."

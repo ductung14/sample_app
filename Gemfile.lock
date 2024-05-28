@@ -46,6 +46,11 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_storage_validations (0.9.8)
+      activejob (>= 5.2.0)
+      activemodel (>= 5.2.0)
+      activestorage (>= 5.2.0)
+      activesupport (>= 5.2.0)
     activejob (7.0.8.1)
       activesupport (= 7.0.8.1)
       globalid (>= 0.3.6)
@@ -70,6 +75,22 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     autoprefixer-rails (10.4.16.0)
       execjs (~> 2)
+    aws-eventstream (1.3.0)
+    aws-partitions (1.931.0)
+    aws-sdk-core (3.196.1)
+      aws-eventstream (~> 1, >= 1.3.0)
+      aws-partitions (~> 1, >= 1.651.0)
+      aws-sigv4 (~> 1.8)
+      jmespath (~> 1, >= 1.6.1)
+    aws-sdk-kms (1.81.0)
+      aws-sdk-core (~> 3, >= 3.193.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-s3 (1.114.0)
+      aws-sdk-core (~> 3, >= 3.127.0)
+      aws-sdk-kms (~> 1)
+      aws-sigv4 (~> 1.4)
+    aws-sigv4 (1.8.0)
+      aws-eventstream (~> 1, >= 1.0.2)
     bcrypt (3.1.20)
     bindex (0.8.1)
     bootsnap (1.18.3)
@@ -87,6 +108,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    coderay (1.1.3)
     concurrent-ruby (1.2.3)
     config (5.4.0)
       deep_merge (~> 1.2, >= 1.2.1)
@@ -121,6 +143,7 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    jmespath (1.6.2)
     jquery-rails (4.6.0)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -154,6 +177,10 @@ GEM
     nokogiri (1.16.3-x86_64-linux)
       racc (~> 1.4)
     pagy (8.4.0)
+    pg (1.3.5)
+    pry (0.14.2)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
     psych (5.1.2)
       stringio
     public_suffix (5.0.5)
@@ -256,6 +283,8 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  active_storage_validations (= 0.9.8)
+  aws-sdk-s3 (= 1.114.0)
   bcrypt (~> 3.1.7)
   bootsnap
   bootstrap-sass
@@ -265,12 +294,14 @@ DEPENDENCIES
   faker (= 2.21.0)
   figaro
   i18n
-  image_processing (~> 1.2)
+  image_processing (= 1.12.2)
   importmap-rails
   jbuilder
   jquery-rails
   mailtrap
   pagy
+  pg (= 1.3.5)
+  pry
   puma (~> 5.0)
   rails (~> 7.0.7)
   sass-rails
