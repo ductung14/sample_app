@@ -8,10 +8,11 @@ class User < ApplicationRecord
   validates :password, presence: true, length: { minimum: Settings.min_password_length }, allow_nil: true
   
   has_secure_password
+  has_many :microposts, class_name: Micropost.name, dependent: :destroy
   
   before_save :downcase_email
   before_create :create_activation_digest
-  
+
   scope :activated, -> { where(activated: true) }
   
   class << self
@@ -20,22 +21,22 @@ class User < ApplicationRecord
       BCrypt::Engine.cost
       BCrypt::Password.create(string, cost: cost)
     end
-    
+
     def new_token
       SecureRandom.urlsafe_base64
     end
   end
-  
+
   def remember
     self.remember_token = User.new_token
     update_attribute(:remember_digest, User.digest(remember_token))
     remember_digest
   end
-  
+
   def session_token
     remember_digest || remember
   end
-  
+
   def authenticated?(attribute, token)
     digest = send("#{attribute}_digest")
     return false if digest.nil?
@@ -58,13 +59,17 @@ class User < ApplicationRecord
     self.reset_token = User.new_token
     update_columns(reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now)
   end
-  
+
   def send_password_reset_email
     UserMailer.password_reset(self).deliver_now
   end
 
   def password_reset_expired?
     reset_sent_at < Settings.time_reset_password.hours.ago
+  end
+
+  def feed
+    microposts.by_user(id)
   end
 
   private

@@ -9,6 +9,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @pagy, @microposts = pagy(@user.microposts, page: params[:page], items: Settings.items_per_page)
   end
   
   def new
