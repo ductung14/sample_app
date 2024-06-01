@@ -4,6 +4,7 @@ min_password_length: 6
 gravatar_size: 80
 default_gravatar_size: 50
 items_per_page: 10
+img_size: 30
 time_reset_password: 2
 content_max_length: 140
 image_max_size_mb: 5

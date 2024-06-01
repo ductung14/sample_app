@@ -46,7 +46,7 @@ vi:
     sample_app: "ứng dụng mẫu."
     notify: "Không tìm thấy người dùng"
     error: "Tạo tài khoản thất bại"
-    micropost: "Nguồn cấp dữ liệu vi bài"
+    micropost: "Các bài đăng"
   help:
     title: "Trợ giúp"
     page: "Trang Trợ giúp Rails Tutorial"
@@ -98,8 +98,30 @@ vi:
   account:
     notify: "Tài khoản đã được kích hoạt!"
     dranger: "Liên kết kích hoạt không hợp lệ"
+    title: "Ứng dụng mẫu"
+    hi: "Xin chào"
+    action: "Chào mừng bạn đến với ứng dụng mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+    activate: "Kích hoạt"
+  mailer:
+    subject: "Kích hoạt tài khoản"
+    hi: "Xin chào"
+  password:
+    title: "User#password_reset"
+    content: "Tìm tôi trong app/views/user_mailer/password_reset.html.erb"
+  text:
+    content: "Chào mừng bạn đến với Ứng dụng Mẫu! Nhấn vào liên kết dưới đây để kích hoạt tài khoản của bạn:"
+    password: "User#password_reset"
+    pass_content: "tìm trong app/views/user_mailer/password_reset.text.erb"
+  stats:
+    following: "Đang theo dõi"
+    followers: "Người theo dõi"
+  unfollow:
+    button: "Bỏ theo dõi"
+  show:
+    micropost: "Các bài đăng"
+  follow:
+    button: "Theo dõi"
     title: "Ứng dụng Mẫu"
-    hi: "Chào"
     action: "Chào mừng đến với Ứng dụng Mẫu! Nhấp vào liên kết dưới đây để kích hoạt tài khoản của bạn:"
     activate: "Kích hoạt"
   mailer:
@@ -135,8 +157,8 @@ vi:
     ago: "trước đây."
     delete: "xoá"
     user: "xem hồ sơ của tôi"
-    micropost: "bài viết vi mô"
-    content: "Soạn bài micropost mới..."
+    micropost: "bài đăng"
+    content: "Soạn bài đăng mới..."
     action: "Bưu kiện"
     yousure: "Bạn chắc chắn?"
     alert: "Kích thước tệp tối đa là 5MB. Vui lòng chọn tệp nhỏ hơn."
@@ -144,8 +166,6 @@ vi:
     mess1: "phải nhỏ hơn 5 MB"
     title: "Bài đăng vi mô"
     error: "Xoá không thành công"
-    error1: "Không tìm thấy micropost"
+    error1: "Không tìm thấy bài đăng"
   share:
     error: "Biểu mẫu chứa"
-  js:
-    file_size_error: "Kích thước tệp tối đa là 5MB. Vui lòng chọn một tệp nhỏ hơn."

@@ -104,7 +104,29 @@ en:
     activate: "Activate"
   mailer:
     subject: "Account activation"
-    password: "Password reset"
+    hi: "Hi"
+  password:
+    title: "User#password_reset"
+    content: "find me in app/views/user_mailer/password_reset.html.erb"
+  text:
+    content: "Welcome to the Sample App! Click on the link below to activate your account:"
+    password: "User#password_reset"
+    pass_content: "find me in app/views/user_mailer/password_reset.text.erb"
+  stats:
+    following: "Following"
+    followers: "Followers"
+  unfollow:
+    button: "Unfollow"
+  show:
+    micropost: "Microposts"
+  follow:
+    button: "Follow"
+    title: "Sample Application"
+    action: "Welcome to the Sample Application! Click the link below to activate your account:"
+    activate: "Activate"
+  mailer:
+    subject: "Account activation"
+    password: "Reset password"
   password:
     content: "find me in app/views/user_mailer/password_reset.html.erb"
   pass_reset:
@@ -121,11 +143,11 @@ en:
     title: "Reset password"
     button: "Update password"
   page_reset:
-     title: "Forgot password"
-     button: "Send"
-     title: "Sample application"
-     action: "Welcome to the Sample App! Click the link below to activate your account:"
-     activate: "Activate"
+    title: "Forgot password"
+    button: "Send"
+    title: "Sample application"
+    action: "Welcome to the Sample App! Click the link below to activate your account:"
+    activate: "Activate"
   controller:
     dranger: "Please log in."
   micropost:

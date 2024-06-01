@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
-  before_action :load_user, only: [:edit, :show, :update, :destroy]
+  before_action :logged_in_user, only: [:index, :edit, :update, :destroy, :following, :followers]
+  before_action :load_user, only: [:edit, :show, :update, :destroy, :following, :followers]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
 
@@ -49,6 +49,18 @@ class UsersController < ApplicationController
       flash[:error] = t("user.error1")
       redirect_to users_url
     end
+  end
+
+  def following
+    @title = t("stats.following")
+    @pagy, @users = pagy @user.following, items: Settings.items_per_page
+    render "show_follow", status: :unprocessable_entity
+  end
+
+  def followers
+    @title = t("stats.followers")
+    @pagy, @users = pagy @user.followers, items: Settings.items_per_page
+    render "show_follow", status: :unprocessable_entity
   end
 
   private
